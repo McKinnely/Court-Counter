@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity
     /**
      * Increase the score for Team A by 1 point.
      */
-    public void addOneForTeamA(View v)
+    public void add50PushUPs(View v)
     {
         scoreTeamA++;
         displayForTeamA(scoreTeamA);
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity
     /**
      * Increase the score for Team A by 2 points.
      */
-    public void addTwoForTeamA(View v)
+    public void add25PushUps(View v)
     {
         scoreTeamA = scoreTeamA + 2;
         displayForTeamA(scoreTeamA);
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity
     /**
      * Increase the score for Team A by 3 points.
      */
-    public void addThreeForTeamA(View v)
+    public void add15PushUps(View v)
     {
         scoreTeamA = scoreTeamA + 3;
         displayForTeamA(scoreTeamA);
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity
     /**
      * Increase the score for Team B by 1 point.
      */
-    public void addOneForTeamB(View v)
+    public void add15DeclinePushUps(View v)
     {
         scoreTeamB++;
         displayForTeamB(scoreTeamB);
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity
     /**
      * Increase the score for Team B by 2 points.
      */
-    public void addTwoForTeamB(View v)
+    public void add25DeclinePushUps(View v)
     {
         scoreTeamB = scoreTeamB + 2;
         displayForTeamB(scoreTeamB);
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity
     /**
      * Increase the score for Team B by 3 points.
      */
-    public void addThreeForTeamB(View v)
+    public void add50DeclinePushUps(View v)
     {
         scoreTeamB = scoreTeamB + 3;
         displayForTeamB(scoreTeamB);

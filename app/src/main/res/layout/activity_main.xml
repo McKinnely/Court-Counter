@@ -34,7 +34,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
                 android:padding="16dp"
-                android:text="Team A"
+                android:text="Push Ups"
                 android:textColor="#616161"
                 android:textSize="14sp" />
 
@@ -55,8 +55,8 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="addThreeForTeamA"
-                android:text="+3 Points" />
+                android:onClick="add15PushUps"
+                android:text="+ 15 Push Ups" />
 
             <Button
                 android:layout_width="match_parent"
@@ -64,8 +64,8 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="addTwoForTeamA"
-                android:text="+2 Points" />
+                android:onClick="add25PushUps"
+                android:text="+25 Push Ups" />
 
             <Button
                 android:layout_width="match_parent"
@@ -73,8 +73,8 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="addOneForTeamA"
-                android:text="Free throw" />
+                android:onClick="add50PushUPs"
+                android:text="+50 Push ups" />
         </LinearLayout>
 
         <View
@@ -95,7 +95,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
                 android:padding="16dp"
-                android:text="Team B"
+                android:text="Decline Push Ups"
                 android:textColor="#616161"
                 android:textSize="14sp" />
 
@@ -116,8 +116,8 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="addThreeForTeamB"
-                android:text="+3 Points" />
+                android:onClick="add15DeclinePushUps"
+                android:text="+15 Push Ups" />
 
             <Button
                 android:layout_width="match_parent"
@@ -125,8 +125,8 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="22dp"
                 android:layout_marginRight="22dp"
-                android:onClick="addTwoForTeamB"
-                android:text="+2 Points" />
+                android:onClick="add25DeclinePushUps"
+                android:text="+25 push ups" />
 
             <Button
                 android:layout_width="match_parent"
@@ -134,8 +134,8 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="22dp"
                 android:layout_marginRight="22dp"
-                android:onClick="addOneForTeamB"
-                android:text="Free throw" />
+                android:onClick="add50DeclinePushUps"
+                android:text="+50 push ups" />
         </LinearLayout>
     </LinearLayout>
 
