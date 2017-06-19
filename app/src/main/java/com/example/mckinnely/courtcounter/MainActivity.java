@@ -6,16 +6,16 @@ import android.view.View;
 import android.widget.TextView;
 
 /**
- * This activity keeps track of the basketball score for 2 teams.
+ * This activity keeps track of all push ups.
  */
 public class MainActivity extends AppCompatActivity
 {
 
     // Tracks the score for Team A
-    int scoreTeamA = 0;
+    int regularPushUps = 0;
 
     // Tracks the score for Team B
-    int scoreTeamB = 0;
+    int inclinePushUps = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -26,86 +26,90 @@ public class MainActivity extends AppCompatActivity
 
 
     /**
-     * Increase the score for Team A by 1 point.
-     */
-    public void add50PushUPs(View v)
-    {
-        scoreTeamA++;
-        displayForTeamA(scoreTeamA);
-    }
-
-    /**
-     * Increase the score for Team A by 2 points.
-     */
-    public void add25PushUps(View v)
-    {
-        scoreTeamA = scoreTeamA + 2;
-        displayForTeamA(scoreTeamA);
-    }
-
-    /**
-     * Increase the score for Team A by 3 points.
+     * Increase push ups by 15.
      */
     public void add15PushUps(View v)
     {
-        scoreTeamA = scoreTeamA + 3;
-        displayForTeamA(scoreTeamA);
+        regularPushUps = regularPushUps + 15;
+        displayForTeamA(regularPushUps);
     }
 
+
     /**
-     * Increase the score for Team B by 1 point.
+     * Increase push ups by 25.
+     */
+    public void add25PushUps(View v)
+    {
+        regularPushUps = regularPushUps + 25;
+        displayForTeamA(regularPushUps);
+    }
+
+
+    /**
+     *Increase push ups by 50.
+     */
+    public void add50PushUPs(View v)
+    {
+        regularPushUps = regularPushUps + 50;
+        displayForTeamA(regularPushUps);
+    }
+
+
+
+    /**
+     * Increase push ups by 15.
      */
     public void add15DeclinePushUps(View v)
     {
-        scoreTeamB++;
-        displayForTeamB(scoreTeamB);
+        inclinePushUps = inclinePushUps + 15;
+        displayForTeamB(inclinePushUps);
     }
 
     /**
-     * Increase the score for Team B by 2 points.
+     * Increase push ups by 25.
      */
     public void add25DeclinePushUps(View v)
     {
-        scoreTeamB = scoreTeamB + 2;
-        displayForTeamB(scoreTeamB);
+        inclinePushUps = inclinePushUps + 25;
+        displayForTeamB(inclinePushUps);
     }
 
     /**
-     * Increase the score for Team B by 3 points.
+     * Increase push ups by 50.
      */
     public void add50DeclinePushUps(View v)
     {
-        scoreTeamB = scoreTeamB + 3;
-        displayForTeamB(scoreTeamB);
+        inclinePushUps = inclinePushUps + 50;
+        displayForTeamB(inclinePushUps);
     }
 
     /**
-     * Resets the score for both teams back to 0.
+     * Resets the all push ups to 0.
      */
     public void resetScore(View v)
     {
-        scoreTeamA = 0;
-        scoreTeamB = 0;
-        displayForTeamA(scoreTeamA);
-        displayForTeamB(scoreTeamB);
+        regularPushUps = 0;
+        inclinePushUps = 0;
+        displayForTeamA(regularPushUps);
+        displayForTeamB(inclinePushUps);
     }
 
     /**
-     * Displays the given score for Team A.
+     * Displays the given push up amount for regular push ups.
      */
     public void displayForTeamA(int score)
     {
-        TextView scoreView = (TextView) findViewById(R.id.team_a_score);
+        TextView scoreView = (TextView) findViewById(R.id.regularPushUps);
         scoreView.setText(String.valueOf(score));
     }
 
 
     /**
-     * Displays the given score for Team B.
+     * Displays the given push up amount for incline push ups.
      */
     public void displayForTeamB(int score)
     {
-        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
+        TextView scoreView = (TextView) findViewById(R.id.declinePushUps);
         scoreView.setText(String.valueOf(score));
     }
 
